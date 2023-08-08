@@ -1,0 +1,134 @@
+ /* css reset */
+body {
+    margin: 0;
+    padding: 0;
+    background: url('image/xy.jpg') no-repeat center center/cover;
+    height: 100vh;
+    width: 100%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);  
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);  
+}
+
+
+#left img {
+    height: 60px;
+    width: auto;
+    border-radius: 50%;
+}
+
+#mid {
+    display: flex;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+ul li {
+    margin: 0 20px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    transition: all 0.2s ease-out;
+}
+
+a {
+    position: relative;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+a:hover {
+    color: #FFA500; /* Change to your desired color */
+    transform: translateY(-3px); /* Move the link slightly upwards */
+}
+
+a::before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #FFA500; /* Change to your desired color */
+    transform: scaleX(0); /* Initially hidden */
+    transform-origin: right;
+    transition: transform 0.3s ease;
+}
+
+a:hover::before {
+    transform: scaleX(1); /* Reveal the underline on hover */
+    transform-origin: left;
+}
+
+
+#right {
+    display: flex;
+    align-items: center;
+}
+
+button {
+    width: auto;
+    height: 32px;
+    border: 1px solid white;
+    border-radius: 15px;
+    padding: 2px 10px;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+
+/* container designing */
+.container {
+    display: block;
+    border: 2px solid white;
+    border-radius: 15px;
+    max-width: 538px;
+    margin: 100px auto;
+    padding: 19px 40px;
+}
+
+h1 {
+    color: aliceblue;
+    text-align: center;
+}
+
+.formgroup {
+    padding: 10px 0;
+}
+
+input {
+    text-align: center;
+    border-radius: 15px;
+    padding: 10px;
+    display: block;
+    width: 75%;
+    margin: auto;
+}
+
+.btn2 {
+    width: 100%;
+    height: 32px;
+    border: 1px solid white;
+    border-radius: 15px;
+    padding: 2px 10px;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    margin: 10px 0;
+}

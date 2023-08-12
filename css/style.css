@@ -6,6 +6,7 @@ body {
     height: 100vh;
     width: 100%;
     font-family: 'Times New Roman', Times, serif;
+    overflow: hidden;
 }
 
 header {
@@ -132,3 +133,13 @@ input {
     cursor: pointer;
     margin: 10px 0;
 }
+@media  (0px<=width<=600px)  {
+    header
+    {
+        flex-direction: column;
+    }
+    #mid{
+        margin: 13px 0px;
+    }
+}
+ 
